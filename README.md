@@ -6,3 +6,5 @@ Este projeto integra a API do **VirusTotal** em um site, permitindo a análise d
 ✅ Upload de arquivos para análise de malware  
 ✅ Verificação de URLs suspeitas  
 ✅ Exibição de relatórios de ameaças detectadas  
+
+teste
