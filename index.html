@@ -7,36 +7,34 @@
     <link rel="stylesheet" href="./styles/style.css">
 
 </head>
-    <header class="header">
+<header class="header">
+    <div class="container_header">
         <img src="./images/geral/maoEsquerda.png" id="maoEsquerda" alt="Imagem Final">
         <a href="#">ARQUIVO</a>
         <a href="#">URL</a>
         <img src="./images/geral/maoDireita.png" id="maoDireita" alt="Imagem Inicial">
-    </header>
+    </div>
+</header>
 <body>
-
-    <div class="container_arquivos">
-        <img src="./images/geral/logo+nome.svg" alt="">
-        <div class="container_links">
-            <div class="links">
-                <a href="#">URL</a>
-                <hr>
+    <div class="container-arquivos">
+        <img src="./images/geral/logo+nome.svg" alt="" class="logo">
+        <div class="container-btn">
+            <div class="container-links" id="url">
+                <a class="link" href="#">URL</a>
+                <hr class="frame">
             </div>
-
-            <div class="links_2">
-                <a href="#">Arquivo</a>
-                <hr>
+            <div class="container-links" id="arquivo">
+                <a class="link" href="#">Arquivo</a>
+                <hr class="frame">
             </div>
         </div>
-        
+
         <div class="input_url">
             <input type="text" placeholder="URL">
             <img src="./images/home_page/pesqButton.png" alt="">
         </div>
-
-        <div class="texto">
-            <h1>Por favor, selecione um arquivo para que possamos verificar se ele está seguro</h1>
-        </div>
+        
+        <p class="texto">Por favor, insira uma URL para que possamos verificar se ela está segura e acessível.</p>
     </div>
 </body>
 </html>
