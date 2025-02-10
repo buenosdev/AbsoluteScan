@@ -1,14 +1,113 @@
-.home_page_body, html {
+body, html {
     margin: 0;
     padding: 0;
-    height: 100%;
-    width: 100%;
-    background-image: url("../images/geral/backgroud.png");
+    height: 100vh;
+    background-image: linear-gradient(180deg, #5369D6 0%, #253273 100%), url("../images/geral/backgroud.png");
     background-size: cover;
+    background-blend-mode: overlay;
+    font-family: 'PT Sans', sans-serif;
 }
 
-.home_page_nav{
+.header {
     width: 100%;
     height: 77px;
-    background: linear-gradient(90deg, rgba(83,105,214,1) 35%, rgba(37,50,115,1) 100%);
+    display: grid;
+    grid-template-columns: repeat(4, 15%);
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    top: 0;    
+    background: linear-gradient(180deg, #5369D6 0%, #253273 100%);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+    z-index: 10; 
+}
+
+.header #maoEsquerda, .header #maoDireita {
+    height: 50px;
+    width: fit-content;
+}
+
+.header > a {
+    color: white;
+    text-decoration: none;
+    height: fit-content;
+    width: fit-content;
+    margin-right: 16%;
+}
+
+.container_arquivos {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container_arquivos img {
+    justify-self: center;
+}
+
+.container_links {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    align-items: center;
+    column-gap: 5%;
+}
+
+.links, .links_2 {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+a {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.links > hr {
+    width: 160px;
+    border: none;
+    height: 5px;
+    background-color: #FFFFFF;
+}
+
+.links > a {
+    color: #FFFFFF;
+}
+
+.links_2 > hr {
+    width: 160px;
+    border: none;
+    height: 5px;
+    background-color: gray;
+}
+
+.links_2 > a {
+    color: gray;
+}
+
+input {
+    width: 810px;
+    height: 64px;
+    border-radius: 10px;
+    border: 2px solid #FFF;
+    background: rgba(243, 243, 243, 0.46);
+}
+
+h1 {
+    grid-row: 4;
+    width: 500px;
+    height: 40px;
+    flex-shrink: 0;
+    color: #FFF;
+    text-align: center;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
