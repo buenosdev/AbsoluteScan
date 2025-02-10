@@ -3,18 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Header</title>
-    <link rel="stylesheet" href="../styles/styles.css">
+    <title>AbsoluteScan</title>
+    <link rel="stylesheet" href="./styles/style.css">
 
 </head>
-<body>
-
-    <div class="header">
-        <img src="../images/geral/maoDireita.png" id="maoDireita" alt="Imagem Inicial">
-        <span>ARQUIVO</span>
-        <span>URL</span>
-        <img src="../images/geral/maoEsquerda.png" id="maoEsquerda" alt="Imagem Final">
+<header class="header">
+    <div class="container_header">
+        <img src="./images/geral/maoEsquerda.png" id="maoEsquerda" alt="Imagem Final">
+        <a href="#">ARQUIVO</a>
+        <a href="#">URL</a>
+        <img src="./images/geral/maoDireita.png" id="maoDireita" alt="Imagem Inicial">
     </div>
+</header>
+<body>
+    <div class="container-arquivos">
+        <img src="./images/geral/logo+nome.svg" alt="" class="logo">
+        <div class="container-btn">
+            <div class="container-links" id="url">
+                <a class="link" href="#">URL</a>
+                <hr class="frame">
+            </div>
+            <div class="container-links" id="arquivo">
+                <a class="link" href="#">Arquivo</a>
+                <hr class="frame">
+            </div>
+        </div>
 
+        <div class="input_url">
+            <input type="text" placeholder="URL">
+            <img src="./images/home_page/pesqButton.png" alt="">
+        </div>
+        
+        <p class="texto">Por favor, insira uma URL para que possamos verificar se ela está segura e acessível.</p>
+    </div>
 </body>
 </html>
