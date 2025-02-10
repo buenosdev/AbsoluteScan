@@ -1,23 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
 
+* {
+    font-family: 'PT Sans', sans-serif;
+}
+
 body, html {
     margin: 0;
     padding: 0;
     height: 100vh;
-    background-image: linear-gradient(180deg, #5369D6 0%, #253273 100%), url("../images/geral/backgroud.png");
     background-size: cover;
     background-blend-mode: overlay;
-    font-family: 'PT Sans', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-image: url("../images/geral/backgroud.png"), linear-gradient(to bottom, #5369D6, #253273);
 }
 
 .header {
     width: 100%;
+    min-width: 100%;
     height: 77px;
-    display: grid;
-    grid-template-columns: repeat(4, 15%);
+    display: flex;
     align-items: center;
     justify-content: center;
-    justify-items: center;
     position: fixed;
     top: 0;    
     background: linear-gradient(180deg, #5369D6 0%, #253273 100%);
@@ -25,59 +34,64 @@ body, html {
     z-index: 10; 
 }
 
-.header #maoEsquerda, .header #maoDireita {
-    height: 50px;
-    width: fit-content;
+.container_header {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.header > a {
+.container_header > #maoEsquerda, .container_header > #maoDireita {
+    width: fit-content;
+    height: 50px;
+}
+
+.container_header > a {
     color: white;
     text-decoration: none;
     height: fit-content;
-    width: fit-content;
-    margin-right: 16%;
+    width: 68px;
+    text-align: center;
+    font-size: 20px;
 }
 
-
 .container-arquivos {
-    display: grid;
-    grid-template-rows: repeat(4, auto);
-    grid-template-columns: repeat(2, 50%);
-    position: relative;
-    left: 36%;
-    top: 25%;
-    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 2%;
+    height: 100%;
     width: fit-content;
 }
 
 .container-links {
-    margin-top: 10%;
-    grid-column: 2;
-    grid-row: 2;
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    grid-template-rows: repeat(2, 100%);
-    justify-items: center;
-    position: relative;
-    right: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 .link {
     font-family: 'PT Sans', sans-serif;
-    grid-row: 1;
     color: #FFFFFF;
     font-size: 24px;
     width: fit-content;
     height: fit-content;
     text-decoration: none;
-    position: relative;
 }
 
 .frame{
-    grid-row: 2;
     width: 160px;
     height: 3px;
     background: #FFFFFF;
+    border: 0;
 }
 
 #url {
@@ -92,26 +106,23 @@ body, html {
     background-color: gray;
 }
 
-#arquivo {
-    grid-row: 2;
-    grid-column: 2;
-}
-
 .btn-arquivo {
-    
-    margin-top: 10%;
-    grid-row: 3;
-    border-radius: 20px;
-    background: #4684F6;
-
-    position: relative;
-    left: 13%;
-    width: 404px;
-    height: 100px;
-
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 404px;
+    height: 100px;
+}
+
+.btn-arquivo[type="file"]::file-selector-button {
+    content: "Select File";
+    border-radius: 20px;
+    border: 0;
+    background: #4684F6;
+    
+    width: 404px;
+    height: 100px;
+    
     color: white;
     font-size: 20px;
     cursor: pointer;
@@ -119,7 +130,6 @@ body, html {
 }
 
 .texto{
-    grid-row: 4;
     width: 500px;
     height: 40px;
     flex-shrink: 0;
@@ -130,4 +140,10 @@ body, html {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+
+.logo {
+    grid-column: 1/2;
+    grid-row: 1;
+    align-self: center;
 }
