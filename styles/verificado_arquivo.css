@@ -72,6 +72,9 @@ html {
   margin-top: 3%;
 }
 
+a{
+  text-decoration: none;
+}
 
 
 @media (max-width: 1500px) {
