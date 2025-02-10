@@ -1,7 +1,7 @@
 html {
   margin: 0%;
   padding: 0%;
-  background-image: url("../images/geral/bg.png");
+  background-image: url("../images/geral/backgroud.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -47,8 +47,8 @@ html {
 }
 
 #logo {
-  position: relative;
-  align-self: center;
+  margin-top: 5%;
+  margin-left: 28%;
 }
 
 #logo > img {
@@ -59,11 +59,20 @@ html {
   max-width: 150px;
   background-color: white;
   border-radius: 20%;
+  border-radius: 15px;
 }
 
-#div-load {
-  justify-self: center;
+#div-load{
+  background-color: white;
+  border-radius: 15px;
+  height: 80%;
 }
+
+#malicioso{
+  margin-top: 3%;
+}
+
+
 
 @media (max-width: 1500px) {
   .header {
@@ -93,7 +102,28 @@ html {
     justify-content: center;
     margin-top: 15%;
   }
+
+  #logo {
+    margin-top: 5%;
+    margin-left: 25%;
+  }
+
+  #malicioso{
+    width: 100%;
+    margin-top: 3%;
+  }
+
+  #div-load{
+    margin-right: 20%;
+    margin-left: 20%;
+    background-color: white;
+    width: 60%;
+    border-radius: 15px;
+    height: 50%;
+  }
 }
+
+
 
 @media (max-width: 768px) {
   .header {
@@ -107,5 +137,24 @@ html {
     grid-template-rows: 70% 70%;
     justify-content: center;
     margin-top: 22%;
+  }
+
+  #logo {
+    margin-top: 5%;
+    margin-left: 25%;
+  }
+
+  #malicioso{
+    width: 100%;
+    margin-top: 3%;
+  }
+
+  #div-load{
+    margin-right: 20%;
+    margin-left: 20%;
+    background-color: white;
+    width: 60%;
+    border-radius: 15px;
+    height: 50%;
   }
 }
