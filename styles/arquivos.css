@@ -17,7 +17,7 @@ body {
     align-items: center;
     justify-content: center;
     width: 100%;
-    background-image: url("../images/geral/backgroud.png"), linear-gradient(to bottom, #5369D6, #253273);
+    background-image: url("../images/geral/backgroud.png"), linear-gradient(to top,#253273,  #5369D6);
 }
 
 .header {
@@ -146,4 +146,26 @@ body {
     grid-column: 1/2;
     grid-row: 1;
     align-self: center;
+}
+
+@media (max-width: 1400px) and (min-width: 720px){
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: nowrap;
+        padding: 0 5%;
+    }
+
+    .container_header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: nowrap;
+        width: 100%;
+    }
+
+    .container_header > * {
+        margin: 0 50px;
+    }
 }
