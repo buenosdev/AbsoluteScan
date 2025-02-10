@@ -1,7 +1,11 @@
 body, html {
     margin: 0;
     padding: 0;
+    width: 100%;
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-image: linear-gradient(180deg, #5369D6 0%, #253273 100%), url("../images/geral/backgroud.png");
     background-size: cover;
     background-blend-mode: overlay;
@@ -16,10 +20,10 @@ body, html {
     align-items: center;
     justify-content: center;
     justify-items: center;
+    position: fixed;
     top: 0;    
     background: linear-gradient(180deg, #5369D6 0%, #253273 100%);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
-    z-index: 10; 
 }
 
 .header #maoEsquerda, .header #maoDireita {
@@ -31,12 +35,12 @@ body, html {
     color: white;
     text-decoration: none;
     height: fit-content;
-    width: fit-content;
-    margin-right: 16%;
+    width: fit-content; 
 }
 
 .container_arquivos {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -51,7 +55,8 @@ body, html {
     grid-template-columns: auto auto;
     justify-content: center;
     align-items: center;
-    column-gap: 5%;
+    column-gap: 40%;
+    margin-top: 5%;
 }
 
 .links, .links_2 {
@@ -62,7 +67,7 @@ body, html {
     text-align: center;
 }
 
-a {
+.container_links a {
     font-family: 'PT Sans', sans-serif;
     font-size: 24px;
     text-decoration: none;
@@ -71,7 +76,7 @@ a {
 .links > hr {
     width: 160px;
     border: none;
-    height: 5px;
+    height: 3px;
     background-color: #FFFFFF;
 }
 
@@ -82,7 +87,7 @@ a {
 .links_2 > hr {
     width: 160px;
     border: none;
-    height: 5px;
+    height: 3px;
     background-color: gray;
 }
 
@@ -90,24 +95,51 @@ a {
     color: gray;
 }
 
-input {
+.input_url {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.input_url input {
     width: 810px;
     height: 64px;
     border-radius: 10px;
     border: 2px solid #FFF;
     background: rgba(243, 243, 243, 0.46);
+    font-size: 20px;
+    text-align: left;
+    padding-left: 15px; 
+    line-height: 64px; 
 }
 
-h1 {
-    grid-row: 4;
+
+.input_url input::placeholder {
+    color: #FFF;
+    font-size: 25px;
+}
+
+.input_url img {
+    width: 44px;
+    height: 44px;
+    margin-left: 10px;
+}
+
+.texto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto h1 {
     width: 500px;
     height: 40px;
-    flex-shrink: 0;
     color: #FFF;
-    text-align: center;
     font-family: 'PT Sans', sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    margin-top: 3%;
 }
