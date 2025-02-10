@@ -72,6 +72,7 @@ body {
 }
 
 .container-btn {
+    max-width: 500px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -106,27 +107,34 @@ body {
     background-color: gray;
 }
 
-.btn-arquivo {
+.input_url {
     display: flex;
-    align-items: center;
     justify-content: center;
-    width: 404px;
-    height: 100px;
+    align-items: center;
+    margin-top: 15px;
 }
 
-.btn-arquivo[type="file"]::file-selector-button {
-    content: "Select File";
-    border-radius: 20px;
-    border: 0;
-    background: #4684F6;
-    
-    width: 404px;
-    height: 100px;
-    
-    color: white;
+.input_url input {
+    width: 810px;
+    height: 64px;
+    border-radius: 10px;
+    border: 2px solid #FFF;
+    background: rgba(243, 243, 243, 0.46);
     font-size: 20px;
-    cursor: pointer;
-    font-family: 'PT Sans', sans-serif;
+    text-align: left;
+    padding-left: 15px; 
+    line-height: 64px; 
+}
+
+.input_url input::placeholder {
+    color: #FFF;
+    font-size: 25px;
+}
+
+.input_url img {
+    width: 44px;
+    height: 44px;
+    margin-left: 10px;
 }
 
 .texto{
@@ -167,5 +175,11 @@ body {
 
     .container_header > * {
         margin: 0 50px;
+    }
+
+    .input_url input {
+        width: 559px;
+        height: 50px; 
+        font-size: 18px; 
     }
 }
