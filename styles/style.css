@@ -60,7 +60,6 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    row-gap: 2%;
     height: 100%;
     width: fit-content;
 }
@@ -95,15 +94,15 @@ body {
     border: 0;
 }
 
-#url {
+#arquivo {
     grid-row: 2;
     grid-column: 1;
 }
-#url a{
+#arquivo a{
     background: none;
     color: gray;
 }
-#url .frame{
+#arquivo .frame{
     background-color: gray;
 }
 
@@ -111,7 +110,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 15px;
 }
 
 .input_url input {
@@ -122,8 +120,9 @@ body {
     background: rgba(243, 243, 243, 0.46);
     font-size: 20px;
     text-align: left;
-    padding-left: 15px; 
-    line-height: 64px; 
+    text-indent: 10px;
+    margin-top: 14px;
+    margin-bottom: 17px;
 }
 
 .input_url input::placeholder {
@@ -156,7 +155,7 @@ body {
     align-self: center;
 }
 
-@media (max-width: 1400px) and (min-width: 720px){
+@media (max-width: 1400px) and (min-width: 768px){
     .header {
         display: flex;
         align-items: center;
@@ -183,3 +182,4 @@ body {
         font-size: 18px; 
     }
 }
+
