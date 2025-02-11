@@ -1,0 +1,129 @@
+html{
+    margin: 0%;
+    padding: 0%;
+    background-image: url("../images/geral/bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 10% 10% 10% 10%;
+    width: 100%;
+    height: 77px;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    position: fixed;
+    top: 0%;
+    right: 0.01%;
+    background: linear-gradient(to right, #5369D6, #37468f);  
+}
+
+.header #maoEsquerda {
+    height: 50px;
+    position: relative;
+    left: 0%;
+    
+
+}
+.header #maoDireita{
+    height: 50px;
+    position: relative;
+    right: 30%;
+    
+}
+
+.text {
+    color: white;
+    font-size: 24px;
+    font-family: Arial, sans-serif;
+}
+
+.main-container{
+    display: grid;
+    position: relative;
+    grid-template-rows: 70% 70%;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+#logo{
+    position: relative;
+    align-self: center;
+}
+
+#logo>img{
+    max-width: 400px;
+}
+
+#load{
+    max-width: 150px;
+    background-color: white;
+    border-radius: 20%;
+}
+
+#div-load{
+    justify-self: center;
+}
+
+
+@media(max-width: 1500px){
+    .header {
+        display: grid;
+        grid-template-columns: 12% 12% 12% 12%;
+
+    }
+
+    .main-container{
+        display: grid;
+        position: relative;
+        grid-template-rows: 70% 70%;
+        justify-content: center;
+        margin-top: 12%;
+        
+    
+    }
+
+}
+
+
+@media(max-width: 1100px){
+    .header {
+        display: grid;
+        grid-template-columns: 15% 15% 15% 15%;
+
+    }
+
+    .main-container{
+        display: grid;
+        position: relative;
+        grid-template-rows: 70% 70%;
+        justify-content: center;
+        margin-top: 15%;
+        
+    
+    }
+
+}
+
+@media(max-width: 768px){
+    .header {
+        display: grid;
+        grid-template-columns: 20% 20% 20% 20%;
+
+    }
+
+    .main-container{
+        display: grid;
+        position: relative;
+        grid-template-rows: 70% 70%;
+        justify-content: center;
+        margin-top: 22%;
+        
+    
+    }
+
+}
