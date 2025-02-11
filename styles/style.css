@@ -123,6 +123,7 @@ body {
     text-indent: 10px;
     margin-top: 11px;
     margin-bottom: 20px;
+    color: #FFF;
 }
 
 .input_url input::placeholder {
@@ -133,12 +134,15 @@ body {
 .input_url img {
     width: 44px;
     height: 44px;
+    justify-self: center;
+    align-self: center;
 }
 
 .input_url button {
-    border: none;
     cursor: pointer;
     margin-left: 10px;
+    background: transparent; 
+    border: none;
 }
 
 .texto{
