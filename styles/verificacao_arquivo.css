@@ -169,3 +169,41 @@ body {
         margin: 0 50px;
     }
 }
+
+
+.container_header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+.container_header > * {
+    margin: 0 30px;
+}
+
+
+
+@media (max-width: 720px) and (min-width: 300px){
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    
+}
+
+.container_header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+.container_header > * {
+    margin: 0 30px;
+}
+
+}
