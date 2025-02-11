@@ -48,10 +48,10 @@ Antes de começar, certifique-se de ter instalado:
 
 1. Acesse o site do **VirusTotal** ([https://www.virustotal.com/](https://www.virustotal.com/)) e faça login.
 2. Vá para **API Key** nas configurações da conta.
-3. Copie sua chave de API.
+3. Copie sua chave de API e cole no arquivo "app.py"
 4. Crie um arquivo `.env` no diretório do projeto e adicione:
    ```env
-   VT_API_KEY=coloque_sua_api_aqui
+   VIRUSTOTAL_API_KEY=coloque_sua_api_aqui
    ```
 
 ---
@@ -63,16 +63,19 @@ Antes de começar, certifique-se de ter instalado:
    python app.py
    ```
 
-2. **Acesse a aplicação pelo navegador ou via API:**
-   - Para verificar uma URL:
+2. **Acesse a aplicação pelo IDE:**
+   - Abra o terminal:
      ```bash
-     curl -X POST http://localhost:5000/scan_url -d "url=https://exemplo.com"
+     cd script
      ```
-   - Para fazer upload de um arquivo:
+   - Após isso:
      ```bash
-     curl -X POST -F "file=@caminho/do/arquivo.exe" http://localhost:5000/scan_file
+     python app.py
      ```
+   -Aguarde, e o resultado será esse:
+   ![image](https://github.com/user-attachments/assets/c02c27d1-8294-4174-b7df-bb125945f920)
 
+3. **Após isso, abra a página "index.html" e aproveite :)**
 ---
 
 ### 📌 Notas adicionais
