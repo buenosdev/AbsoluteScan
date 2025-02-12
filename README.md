@@ -48,10 +48,10 @@ Antes de começar, certifique-se de ter instalado:
 
 1. Acesse o site do **VirusTotal** ([https://www.virustotal.com/](https://www.virustotal.com/)) e faça login.
 2. Vá para **API Key** nas configurações da conta.
-3. Copie sua chave de API e cole no arquivo "app.py"
-4. Crie um arquivo `.env` no diretório do projeto e adicione:
+3. Copie sua chave de API e cole no arquivo `app.py`
+4. Crie um arquivo `.env` ou use o arquivo `app.py` no diretório do projeto e adicione:
    ```env
-   VIRUSTOTAL_API_KEY=coloque_sua_api_aqui
+   VIRUSTOTAL_API_KEY= coloque_sua_api_aqui
    ```
 
 ---
@@ -88,4 +88,23 @@ E para iniciar o projeto, execute:
 ```bash
 python app.py
 ```
+---
+
+## Equipe:
+
+Time de desenvolvedores da **SenacHubAcademy**.
+- **[Davi](https://github.com/buenosdev)** 
+- **[Paulo](https://github.com/PauloMatheusBS)** 
+- **[Rafaela](https://github.com/Faelavgtt)** 
+- **[Rafael](https://github.com/Vatreax)** 
+- **[Felipe](https://github.com/OSepiliF)** 
+- **[Gabriel](https://github.com/Gabriel-Cs137)**
+- **[Kelvin](https://github.com/Kelvinkrcs)** 
+
+## Docente do Projeto:
+- **[Caique Fernandes](https://github.com/Caique-FLopes)** 
+
+
+
+
 
